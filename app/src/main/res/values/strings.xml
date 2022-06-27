@@ -5,4 +5,7 @@
     <string name="start_quiz">Start Quiz</string>
     <string name="wizard">Wizard</string>
     <string name="next">Next</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
 </resources>
