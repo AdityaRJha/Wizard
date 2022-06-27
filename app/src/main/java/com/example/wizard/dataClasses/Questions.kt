@@ -1,4 +1,4 @@
-package com.example.wizard
+package com.example.wizard.dataClasses
 
 data class Questions(
     val response_code: Int,

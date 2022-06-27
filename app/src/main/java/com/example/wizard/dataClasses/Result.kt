@@ -1,4 +1,4 @@
-package com.example.wizard
+package com.example.wizard.dataClasses
 
 data class Result(
     val category: String,
