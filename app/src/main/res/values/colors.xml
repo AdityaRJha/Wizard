@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#417EFF</color>
     <color name="colorOptionBtn">#4A4A4A</color>
+    <color name="cardviewbg">#7C8BC34A</color>
 </resources>

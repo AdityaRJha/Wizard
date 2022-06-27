@@ -8,4 +8,6 @@
     <string name="easy">Easy</string>
     <string name="medium">Medium</string>
     <string name="hard">Hard</string>
+    <string name="question_display">Question would be displayed here.</string>
+    <string name="submit">Submit</string>
 </resources>

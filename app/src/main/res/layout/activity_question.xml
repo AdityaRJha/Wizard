@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".QuestionsActivity"
+        android:orientation="vertical"
+        android:background="#1B1B1B">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="5"
+                android:minHeight="30dp"
+                android:padding="13dp"
+                android:progress="2"
+                android:progressTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.024"
+                tools:layout_editor_absoluteX="0dp">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="@string/question_display"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                tools:layout_editor_absoluteX="37dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="132dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnAnswerSubmit"
+                tools:ignore="MissingConstraints"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/cardviewbg"
+                tools:layout_editor_absoluteX="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:layout_marginBottom="200dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/btnAnswerSubmit"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <TextView
+                        android:id="@+id/tvOption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_option_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:textSize="20sp"
+                        tools:text="Something" />
+
+                    <TextView
+                        android:id="@+id/tvOption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_option_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:textSize="20sp"
+                        tools:text="Something" />
+
+                    <TextView
+                        android:id="@+id/tvOption3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_option_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:textSize="20sp"
+                        tools:text="Something" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_option_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:paddingVertical="15dp"
+                        android:textColor="@color/white"
+                        android:clickable="true"
+                        android:textSize="20sp"
+                        tools:text="Something" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAnswerSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/submit"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
