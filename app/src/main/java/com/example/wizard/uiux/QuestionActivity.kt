@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 var score = 0
 class QuestionActivity : AppCompatActivity() {
 
-    private val BASE_URL = "https://opentdb.com/api.php?"
+    private val BASE_URL = "https://opentdb.com/"
     private var currentQuestionId = -1
     private var selectedAnswers = mutableMapOf<Int, String>()
     private lateinit var level: String
