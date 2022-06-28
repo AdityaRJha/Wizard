@@ -10,4 +10,8 @@
     <string name="hard">Hard</string>
     <string name="question_display">Question would be displayed here.</string>
     <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="congratulations_name">Congratulations Name</string>
+    <string name="your_score_is_1_5">Your score is 1/5</string>
+    <string name="finish">FINISH</string>
 </resources>

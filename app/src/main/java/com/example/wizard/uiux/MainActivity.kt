@@ -7,14 +7,15 @@ import androidx.databinding.DataBindingUtil
 import com.example.wizard.R
 import com.example.wizard.databinding.ActivityMainBinding
 
-
+var name = ""
 class MainActivity : AppCompatActivity() {
 
-    var name = ""
+
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        supportActionBar?.hide()
 
 
         binding.btnStartQuiz.setOnClickListener {

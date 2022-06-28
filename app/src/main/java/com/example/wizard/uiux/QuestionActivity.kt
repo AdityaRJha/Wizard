@@ -29,6 +29,7 @@ class QuestionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_question)
+        supportActionBar?.hide()
 
         binding.progressBar2.visibility = View.VISIBLE
         val bundle = intent.extras

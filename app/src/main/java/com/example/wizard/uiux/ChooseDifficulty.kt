@@ -14,6 +14,7 @@ class ChooseDifficulty : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_choose_difficulty)
+        supportActionBar?.hide()
 
 
         binding.easyButton.setOnClickListener {
