@@ -1,4 +1,4 @@
-# Quizer - QuizAppKotlinAndroid
+# Wizard - Quiz App Kotlin Android
 
 
 ## Main Acitivity
